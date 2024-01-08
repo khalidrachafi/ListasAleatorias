@@ -4,12 +4,22 @@
 
 package daw;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  *
  * @author khalid
  */
 public class ListasAleatorias {
-
+    Random random = new Random();
+    
+    public ArrayList<Character> Lista1= new ArrayList<>();
+    public ArrayList<Character> Lista2= new ArrayList<>();
+    
+    public ArrayList<Character> Lista3= new ArrayList<>();
+    
+    
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
@@ -21,3 +31,5 @@ public class ListasAleatorias {
 //    que no están en la segunda. Imprime el resultado usando API Stream y lambdas.
    
 }
+
+ 
