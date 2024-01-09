@@ -51,6 +51,10 @@ public class ListasAleatorias {
     }
 
     
+//    public ArrayList CharLista3(){
+//
+//    }
+    
     //En un programa nuevo, crea dos listas de tamaño aleatorio de letras 
 //    entre la 'a' y la 'z'. Estas listas deben tener entre 10 y 20 elementos. 
 //    Una vez creadas las listas, imprime por pantalla sus elementos usando 
