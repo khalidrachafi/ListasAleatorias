@@ -50,21 +50,6 @@ public class ListasAleatorias {
          return lista2;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < lista1.size(); i++) {
-            sb.append(lista1.get(i));
-        }
-        sb.append("\n");
-        for (int i = 0; i < lista2.size(); i++) {
-            sb.append(lista2.get(i));
-        }
-        return sb.toString();
-    }
-    
-    
-
     
     //En un programa nuevo, crea dos listas de tamaño aleatorio de letras 
 //    entre la 'a' y la 'z'. Estas listas deben tener entre 10 y 20 elementos. 
