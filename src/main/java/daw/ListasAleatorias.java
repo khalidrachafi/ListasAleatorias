@@ -14,15 +14,57 @@ import java.util.Random;
 public class ListasAleatorias {
     Random random = new Random();
     
-    public ArrayList<Character> Lista1= new ArrayList<>();
-    public ArrayList<Character> Lista2= new ArrayList<>();
-    
-    public ArrayList<Character> Lista3= new ArrayList<>();
-    
-    
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    ArrayList<Character> lista1= new ArrayList<>();
+    ArrayList<Character> lista2= new ArrayList<>();
+    ArrayList<Character> lista3= new ArrayList<>();
+
+    public ListasAleatorias() {
+      this.lista1 = GeneradorChar1();
+      this.lista2 = GeneradorChar2();
+        
     }
+    
+    
+    
+    
+    
+    public ArrayList GeneradorChar1(){
+         int tam= random.nextInt(10,21);
+         for (int i = 0; i < tam; i++) {
+            int gen=random.nextInt(26);
+            char charAleatorio = (char) ('a' + gen);
+            
+            lista1.add(charAleatorio);
+        }
+         return lista1;
+    }
+    
+    public ArrayList GeneradorChar2(){
+         int tam= random.nextInt(10,21);
+         for (int i = 0; i < tam; i++) {
+            int gen=random.nextInt(26);
+            char charAleatorio = (char) ('a' + gen);
+            
+            lista2.add(charAleatorio);
+        }
+         return lista2;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < lista1.size(); i++) {
+            sb.append(lista1.get(i));
+        }
+        sb.append("\n");
+        for (int i = 0; i < lista2.size(); i++) {
+            sb.append(lista2.get(i));
+        }
+        return sb.toString();
+    }
+    
+    
+
     
     //En un programa nuevo, crea dos listas de tamaño aleatorio de letras 
 //    entre la 'a' y la 'z'. Estas listas deben tener entre 10 y 20 elementos. 
